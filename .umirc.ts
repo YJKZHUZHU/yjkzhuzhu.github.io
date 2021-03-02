@@ -43,9 +43,9 @@ export default defineConfig({
     ],
     '/react': [
       {
-        title: 'React',
+        title: '浅谈React hooks',
         path: null,
-        children: ['react/hooks.md'],
+        children: ['react/hooksSummary.md'],
       },
     ],
   },
