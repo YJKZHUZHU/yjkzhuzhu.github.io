@@ -1,4 +1,4 @@
-##浅谈 React hooks
+## 浅谈 React hooks
 
 - [React 组件发展史](#Reac组件发展史)
 - [为什么使用 React hooks,而不是 class 组件](#为什么使用reacthooks,而不是class组件)
@@ -501,7 +501,7 @@ export default Memo;
 
 > 不常用，自行看官方文档
 
-#### ReactHooks 优缺点
+#### reacthooks 优缺点
 
 ##### 优点
 
@@ -607,9 +607,9 @@ export default Memo;
 - ahooks
 - react-use
 
-#### Hooks 最佳实践
+#### hooks 最佳实践
 
-#### Hooks 心智负担
+#### hooks 心智负担
 
 > 使用 hooks 开发经常提及的几个问题
 
