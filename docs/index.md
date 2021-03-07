@@ -11,7 +11,7 @@ features:
     desc: 豆芽[音乐](http://8.129.175.169/recommend/findmusic/personal-recommendation)
   - icon: https://github.githubassets.com/pinned-octocat.svg
     title: github
-    desc: 豆芽[github]('https://github.com/YJKZHUZHU')
+    desc: 豆芽[github](https://github.com/YJKZHUZHU)
   - icon: https://img.icons8.com/nolan/2x/resume.png
     title: 个人简历
     desc: 待更新
