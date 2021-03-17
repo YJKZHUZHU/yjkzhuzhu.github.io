@@ -27,6 +27,7 @@ export const menus = {
         // 菜单子项（可选）
         'js/array.md',
         'js/promise.md',
+        'js/深拷贝和浅拷贝.md',
       ],
     },
   ],
