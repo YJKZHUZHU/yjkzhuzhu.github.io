@@ -28,6 +28,8 @@ export const menus = {
         'js/array.md',
         'js/promise.md',
         'js/深拷贝和浅拷贝.md',
+        'js/手写系列.md',
+        'js/提效.md',
       ],
     },
   ],
