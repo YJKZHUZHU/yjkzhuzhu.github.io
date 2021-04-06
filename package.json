@@ -5,7 +5,7 @@
     "start": "dumi dev",
     "build": "dumi build",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "build:doc":"npm run build && gh-pages -d dist"
+    "build:doc": "npm run build && gh-pages -d dist"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
