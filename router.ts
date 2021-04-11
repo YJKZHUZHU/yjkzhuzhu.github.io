@@ -44,7 +44,7 @@ export const menus = {
     {
       title: 'React',
       path: null,
-      children: ['react/hooksSummary.md'],
+      children: ['react/hooksSummary.md', 'react/hoc.md'],
     },
   ],
   '/dev-tool': [
