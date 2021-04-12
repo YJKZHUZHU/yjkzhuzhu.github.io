@@ -104,8 +104,8 @@ export default WidthInput(InputComponent);
 
 ##### HOC 的不足之处
 
-- 产生了许多无用的组件，加深了组件的嵌套，性能和调试收到影响，react devTool 可查看![demo](/hooksSummary/1.png)
-- 多个 HOC 的同事嵌套，劫持了 Props,命名可能会冲突，并且 Props 的来源不好判断
+- 产生了许多无用的组件，加深了组件的嵌套，性能和调试受到影响，react devTool 可查看![demo](/hooksSummary/1.png)
+- 多个 HOC 的同时嵌套，劫持了 Props,命名可能会冲突，并且 Props 的来源不好判断
 
 #### Render Props
 
