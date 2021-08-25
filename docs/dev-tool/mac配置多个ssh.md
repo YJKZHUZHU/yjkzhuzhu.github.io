@@ -1,3 +1,12 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-05-06 09:52:26
+ * @LastEditTime: 2021-08-25 16:24:12
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /yjkzhuzhu.github.io/docs/dev-tool/mac配置多个ssh.md
+-->
+
 ## mac 配置多个 ssh
 
 > 既要使用公司的 git 仓库，还要用自己的 github 的仓库，这时候配置多个 ssh 是非常有必要的。
@@ -33,7 +42,7 @@ ssh -T git@github.com
 
 出现`Hi YJKZHUZHU! You've successfully authenticated, but GitHub does not provide shell access.`则说明配置成功哦
 
-如果出现如下提示，则说明有权限问题：
+如果出现如下提示，则说明有权限问题（过段时间不用就会提示这个）：
 
 `Permission denied (publickey)`
 
@@ -54,7 +63,7 @@ and the repository exists.
 
 解决 ssh 权限问题:
 
-> 通常一台电脑生成一个 ssh 不会有这个问题，当一台电脑生成多个 ssh 的时候，就可能遇到这个问题，解决步骤如下
+> 通常一台电脑生成一个 ssh 不会有这个问题，当一台电脑生成多个 ssh 的时候，就可能遇到这个问题，解决步骤如下.
 
 - 查看系统 ssh-key 代理,执行如下命令
 
