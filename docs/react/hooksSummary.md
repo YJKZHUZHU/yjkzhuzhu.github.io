@@ -213,11 +213,11 @@ const App = () => {
 
 ![demo1](/hooksSummary/2.png)
 
-可以看到，有用到 state,props 都得结构一次，不同的生命周期对应不同的业务逻辑（请求，清除定时器，优化等）
+可以看到，有用到 state,props 都得解构一次，不同的生命周期对应不同的业务逻辑（请求，清除定时器，优化等）
 
 > hooks 解决了哪些问题
 
-- 避免了高阶不函数的嵌套地狱
+- 避免了高阶组件的嵌套地狱
 - 函数式编程，比类组件更容易理解，没有 this 的困扰
 - 弱化了生命周期，class 组件的生命周期，都可以用 useEffect 结合其他 hooks 来解决
 - 函数组件也可以有状态（遵循 hooks 书写规则）
@@ -347,7 +347,7 @@ export default EffectDeep;
 ##### useContext
 
 - useContext 的组件总会在 context 值变化时重新渲染， 所以`<MyContext.Provider>`包裹的越多，层级越深，性能会造成影响
-- `<MyContext.Provider>` 的 value 发生变化时候， 包裹的组件无论是否订阅 content value，所有组件都会从新渲染。
+- `<MyContext.Provider>` 的 value 发生变化时候， 包裹的组件无论是否订阅 content value，所有组件都会重新渲染。
 - 子组件不想重复渲染，可以用 memo 优化
 
 ##### useRef
@@ -414,7 +414,7 @@ export default Counter;
 
 使用场景
 
-- state 逻辑复杂切包含多个子值，可以集中处理
+- state 逻辑复杂且包含多个子值，可以集中处理
 - 下一个 state 依赖于之前的 state
 - 将读取和写入分开
 
