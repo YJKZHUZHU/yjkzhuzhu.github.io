@@ -3,13 +3,14 @@ on: [push]
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
+
     steps:
       - name: 拉取代码
         uses: actions/checkout@v2
 
       - name: 指定node版本
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: '14.16.0'
 
