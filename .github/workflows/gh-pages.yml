@@ -1,20 +1,19 @@
-name: 部署
-on: [push]
+name: github pages
+
+on:
+  push:
+    branches:
+      - master # default branch
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - run: yarn
-      - run: yarn run build
-      # - run: yarn run tsc
-      - name: Build and Deploy
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run docs:build
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          NODE_OPTIONS: --max_old_space_size=4096
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: 'dist/'
-          BUILD_SCRIPT: yarn && npm uninstall husky && npm run site_build && git checkout . && git clean -df
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./dist
