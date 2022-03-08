@@ -21,3 +21,7 @@
 # ide
 /.vscode
 /.idea
+.history
+
+.umi
+.umi-production

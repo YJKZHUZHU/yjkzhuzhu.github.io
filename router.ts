@@ -51,7 +51,11 @@ export const menus = {
     {
       title: '开发效率',
       path: null,
-      children: ['dev-tool/port.md', 'dev-tool/mac配置多个ssh.md'],
+      children: [
+        'dev-tool/port.md',
+        'dev-tool/mac配置多个ssh.md',
+        'dev-tool/github自动部署.md',
+      ],
     },
   ],
 };
