@@ -24,7 +24,7 @@ jobs:
         run: yarn
 
       - name: 编译构建
-        run: yarn run build
+        run: yarn run build:doc
 
       - name: 发布
         uses: peaceiris/actions-gh-pages@v3
