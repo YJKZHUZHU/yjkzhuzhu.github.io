@@ -12,10 +12,7 @@ jobs:
       # - run: yarn run tsc
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@master
-        env:
-          CI: true
-          GIT_CONFIG_NAME: qixian.cs
-          GIT_CONFIG_EMAIL: qixian.cs@outlook.com
+        with:
           NODE_OPTIONS: --max_old_space_size=4096
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
