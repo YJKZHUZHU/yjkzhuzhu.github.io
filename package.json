@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "dumi-app",
+  "name": "douya-vlog",
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",
