@@ -1,34 +1,23 @@
-name: 博客自动化部署
+name: 部署
 on: [push]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 拉取代码
-        uses: actions/checkout@v2
-
-      - name: yarn 缓存
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - uses: actions/cache@v1
-        with:
-          path: ${{steps.yarn-cache.outputs.dir}}
-          key: ${{runner.os}}-yarn-${{hashFiles('**/yarn.lock')}}
-          restore-keys: | 
-            ${{runner.os}}-yarn-
-      
-      
-      - name: 安装依赖
-        run: yarn
-
-      - name: 编译构建
-        run: yarn run build
-
-      - name: 发布
-        uses: peaceiris/actions-gh-pages@v3
-        with: 
-          PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          PUBLISH_BRANCH: gh-pages # 推送分支
-          PUBLIC_DIR: ./dist/* # 部署目录
+      - name: Checkout
+        uses: actions/checkout@master
+      - run: yarn
+      - run: yarn run lint
+      # - run: yarn run tsc
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          CI: true
+          GIT_CONFIG_NAME: qixian.cs
+          GIT_CONFIG_EMAIL: qixian.cs@outlook.com
+          NODE_OPTIONS: --max_old_space_size=4096
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: 'dist/'
+          BUILD_SCRIPT: yarn && npm uninstall husky && npm run site_build && git checkout . && git clean -df
