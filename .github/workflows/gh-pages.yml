@@ -31,4 +31,4 @@ jobs:
         with: 
           PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           PUBLISH_BRANCH: gh-pages # 推送分支
-          PUBLIC_DIR: ./dist # 部署目录
+          PUBLIC_DIR: ./dist/* # 部署目录
