@@ -8,16 +8,7 @@ jobs:
     steps:
       - name: 拉取代码
         uses: actions/checkout@v2
-
-      - name: 指定node版本
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '14.16.0'
-
-      - name: 将npm配置为使用 https
-        run: >
-          git config --global url."https://github.com/".insteadOf
-          ssh://git@github.com/
+      
       
       - name: 安装依赖
         run: npm i
@@ -26,7 +17,7 @@ jobs:
         run: npm run build
 
       - name: 发布
-      - uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3
         run: npm run deploy
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
