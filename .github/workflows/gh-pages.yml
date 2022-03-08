@@ -1,10 +1,5 @@
 name: 博客自动化部署
-
-
-on:
-  push:
-    branches:
-      - master # default branch
+on: [push]
 
 jobs:
   deploy:
@@ -17,6 +12,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.16.0'
+
       - name: 将npm配置为使用 https
         run: >
           git config --global url."https://github.com/".insteadOf
