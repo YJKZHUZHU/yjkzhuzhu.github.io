@@ -8,6 +8,7 @@ export const navs = [
       { title: 'React', path: '/react' },
       { title: '开发效率', path: '/dev-tool' },
       { title: '面试', path: '/interview' },
+      { title: '脚本', path: '/sh' },
     ],
   },
   { title: 'JavaScript', path: '/js' },
@@ -15,6 +16,8 @@ export const navs = [
   { title: 'React', path: '/react' },
   { title: 'Vue', path: '/vue' },
   { title: '开发效率', path: '/dev-tool' },
+  { title: '面试', path: '/interview' },
+  { title: '脚本', path: '/sh' },
 ];
 
 export const menus = {
