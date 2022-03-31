@@ -24,7 +24,7 @@ export const menus = {
   // 需要自定义侧边菜单的路径，没有配置的路径还是会使用自动生成的配置
   '/js': [
     {
-      title: 'JavaScript',
+      // title: 'JavaScript',
       path: null,
       children: [
         // 菜单子项（可选）
@@ -33,6 +33,7 @@ export const menus = {
         'js/深拷贝和浅拷贝.md',
         'js/手写系列.md',
         'js/提效.md',
+        'js/排序.md',
       ],
     },
   ],

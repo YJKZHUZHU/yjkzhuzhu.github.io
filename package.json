@@ -5,7 +5,7 @@
     "start": "dumi dev",
     "build": "dumi build",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "build:doc":"dumi build && gh-pages -d dist",
+    "build:doc": "dumi build && gh-pages -d dist",
     "deploy": "gh-pages -d dist"
   },
   "main": "dist/index.js",
@@ -28,5 +28,9 @@
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "antd": "^4.19.3",
+    "react": "^17.0.2"
   }
 }
