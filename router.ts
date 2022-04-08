@@ -34,6 +34,7 @@ export const menus = {
         'js/手写系列.md',
         'js/提效.md',
         'js/排序.md',
+        'js/斐波那契数列.md',
       ],
     },
   ],
