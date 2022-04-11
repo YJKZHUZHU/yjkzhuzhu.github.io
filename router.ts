@@ -54,13 +54,20 @@ export const menus = {
   ],
   '/dev-tool': [
     {
-      title: '开发效率',
+      title: null,
       path: null,
       children: [
         'dev-tool/port.md',
         'dev-tool/mac配置多个ssh.md',
         'dev-tool/github自动部署.md',
       ],
+    },
+  ],
+  '/interview': [
+    {
+      title: null,
+      path: null,
+      children: ['interview/react.md', 'interview/综合.md', 'interview/http'],
     },
   ],
 };
