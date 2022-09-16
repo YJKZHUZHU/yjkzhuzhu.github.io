@@ -35,6 +35,7 @@ export const menus = {
         'js/提效.md',
         'js/排序.md',
         'js/斐波那契数列.md',
+        'js/设计模式.md',
       ],
     },
   ],
