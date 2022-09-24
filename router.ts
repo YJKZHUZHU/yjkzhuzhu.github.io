@@ -54,6 +54,7 @@ export const menus = {
         'react/hooksSummary.md',
         'react/hoc.md',
         'react/reactNative.md',
+        'react/taro.md',
       ],
     },
   ],
